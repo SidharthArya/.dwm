@@ -28,4 +28,7 @@ super + r; c
 
 super + r; C
          pkill -f concentration && notify-send Timer "Timer Cancelled"
-
+super + r; b
+	st -e bash -c 'upower -d | less'
+super + r; s
+	st -e bash -c 'sensors | less'
