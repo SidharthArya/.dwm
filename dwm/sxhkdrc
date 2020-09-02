@@ -32,3 +32,5 @@ super + r; b
 	st -e bash -c 'upower -d | less'
 super + r; s
 	st -e bash -c 'sensors | less'
+super + r; f
+	st -e bash -c 'EDITOR=nvim hledger-ui -f ~/Documents/Org/Ledger/finance.ledger'
