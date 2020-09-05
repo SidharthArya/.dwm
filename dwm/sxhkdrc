@@ -15,6 +15,8 @@ pactl list sinks | grep -q Mute:.no && pactl set-sink-mute 0 1 || pactl set-sink
 super + d; {o,m,n,t}
 	emacs --config {org,mail,news,tracking}
 
+super + d; f
+      st -e nnn
 super + r; d
          emacs --script ~/.emacs.d/scripts/daily
 super + r; q
