@@ -37,6 +37,8 @@ super + r; s
 super + r; f
 	st -e bash -c 'EDITOR=nvim hledger-ui -f ~/Documents/Org/Ledger/finance.ledger'
 
+super + shift + c
+	xkill -id $(xdo id)
 XF86AudioMute
         pamixer -t
         
