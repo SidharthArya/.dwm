@@ -43,4 +43,4 @@ XF86AudioMute
         pamixer -t
         
 XF86AudioMicMute
-        pactl set-source-mute $(pactl list sources | grep Source | tail -n 1 | awk -F\# '{print $2}') toggle
+        bash -c "pactl set-source-mute $(pactl list sources | grep Source | tail -n 1 | awk -F\# '{print $2}') toggle"
