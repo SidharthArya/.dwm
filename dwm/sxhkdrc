@@ -36,3 +36,9 @@ super + r; s
 	st -e bash -c 'sensors | less'
 super + r; f
 	st -e bash -c 'EDITOR=nvim hledger-ui -f ~/Documents/Org/Ledger/finance.ledger'
+
+XF86AudioMute
+        pamixer -t
+        
+XF86AudioMicMute
+        pactl set-source-mute 14 toggle
